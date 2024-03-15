@@ -1,7 +1,7 @@
 document.querySelector('#header').innerHTML= "estoy leyendo el documento switch"
 var fruta
 var mensaje 
-var userIpunt = prompt("ingrese el sabor de su fruta")
+var userIpunt = prompt("ingrese el numero de su fruta")
 
 function jugo_de_fresas() {
     window.alert(mensaje);
@@ -21,14 +21,14 @@ function jugo_de_fresas() {
     document.querySelector('#header').innerHTML = mensaje;
     document.querySelector('#header').style.color = "blue";
   }
-  fruta= userIpunt.toLowerCase()
+  fruta= parseInt(userIpunt)/// con parseInt se convierte a entero
   switch(fruta){
-     case "fresas": 
+     case 1: 
      mensaje = "batir fresas"
         jugo_de_fresas()
     break
-    case "naranja":
-    case "mandarina":
+    case 2:
+    case 3:
         jugo_de_naranja()
     break
  default:

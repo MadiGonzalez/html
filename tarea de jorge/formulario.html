@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo1.css">
+    <title>Formulario de datos</title>
+    <script src="enviarinformacion.js"></script>
+</head>
+
+<body>
+    <h1>Formulario de Registro</h1>
+    <form onsubmit="return enviarFormulario()">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" required>
+        <br>
+        <button type="submit" id="enviar">guardar Datos</button>
+        <button type="reset" name="button" id="button" value="Restablecer">
+        limpiar</button>
+
+    </form>
+
+</body>
+
+</html>
+
